@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Login Page</title>
+  <link rel="icon" href="safekids.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="login.js"></script>
+  <!--右クリック禁止-->
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
+</head>
+<body background="8519433.jpg">
+<center>
+  <div class="container">
+    <h2>ログイン</h2>
+    <label for="mailAddress">メールアドレス:</label>
+    <input type="text" id="mailAddress"><br>
+    <label for="pass">パスワード:</label>
+    <input type="password" id="pass"><br>
+    <input type="checkbox" id="showPassword" onclick="showOrHide()"> パスワードを表示<br>
+    <button onclick="login()">ログイン</button>
+    <br><br>
+    <a href="register.html">新規ユーザー登録はこちら</a>
+  </div>
+</center>
+</body>
+</html>
+

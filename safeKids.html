@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>safeKids</title>
+    <link rel="icon" href="safekids.png" type="image/png">
+    <link rel="stylesheet" href="styles.css"> <!-- スタイルシートへのリンク -->
+    <!--右クリック禁止-->
+    <script>
+        document.addEventListener('contextmenu', event => event.preventDefault());
+    </script>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: transparent;
+            padding: 20px;
+            text-align: center;
+            border-radius: 0 0 20px 20px;
+        }
+
+        header h1 {
+            color: white;
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 24px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: black;
+        }
+
+        section {
+            background-color: transparent;
+            padding: 40px;
+            margin-bottom: 40px;
+            border-radius: 10px;
+        }
+
+        section h2 {
+            font-size: 36px;
+            color: black;
+            margin-bottom: 20px;
+        }
+        
+        section h3 {
+            font-size: 36px;
+            color: black;
+            margin-bottom: 20px;
+        }
+
+        section p {
+            font-size: 20px;
+            color: black;
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 20px;
+            text-decoration: none;
+            border-radius: 30px;
+            transition: background-color 0.3s ease;
+        }
+
+        .button:hover {
+            background-color: #FF5246;
+        }
+        
+        .container {
+            width: 200px;
+            height: 200px;
+            background-color: #e0e0e0;
+            color: #333;
+            border-radius: 0;
+            border: 3px solid #333;
+            position: relative;
+            margin-left: 10px;
+            text-align: center;
+            padding: 15px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 20%, 30% 30%, 50% 10%, 60% 60%, 10% 50%);
+        }
+        
+        .container2 {
+            width: 100%;
+            height: 100%;
+            background-color: #e0e0e0;
+            color: #333;
+            border-radius: 0;
+            border: 3px solid #333;
+        }
+        
+    </style>
+</head>
+
+<body background="8519433.jpg">
+
+<header>
+    <h1>SafeKids</h1>
+    <nav>
+        <ul id="menu">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#introduction">introduction</a></li>
+            <li><a href="#detail">detail</a></li>
+            <li><a href="#contact">contact</a></li>
+            <li><a href="#login">login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="home">
+        <div class="container2">
+        <h2>Home</h2>
+        <p>近年、幼稚園への送迎バスの需要が高まる一方で、バス内にお子様を置き去りにしてしまう痛ましい事件も発生しています。このような悲劇を防ぐため、バス内での置き去りを防止する技術が求められています。私たちの企業では、この問題を解決するために、安価で多機能なM5Stackを活用することを理念としています。
+        M5Stackは、さまざまなセンサーやモジュールを簡単に接続できるIoTデバイスで、コストパフォーマンスに優れています。例えば、RFID技術を利用して、バスにまだ乗っているお子様の確認や、全員が降りたかどうかのチェックを行うことができます。また、NCIR2を用いることで体温測定も可能です。
+        これにより、安全な送迎環境を提供し、お子様の命を守るための一助となることを目指しています。私たちは、手頃な価格で先進的な技術を提供することで、より多くの幼稚園や保護者が安心して利用できるシステムを実現します。</p>
+        </div>
+    </section>
+
+    <section id="introduction">
+        <div class="container2">
+        <h2>introduction</h2>
+        <p><b>M5Stack</b>は、約5cm×5cmのコンパクトな正方形ケースに、Wi-FiとBluetoothによる無線通信機能を搭載したCPU（ESP32）、カラー液晶ディスプレイ、プッシュボタン、スピーカー、microSDカードスロット、バッテリーなどが一体となった小型マイコンモジュールです。
+        <br><b>SafeKids</b>は、M5StackのRFID機能を利用して園児の出欠情報をスクリプトに送信します。また、温度センサーであるNICRを活用して、園児の体温を記録することも可能です。現在、RFIDで取得した園児のIDと体温を紐付け、一定時間ごとに体温を記録するシステムを開発中です。体温に異常があった場合には、すぐに通知する機能も実装予定です。
+        M5StackのNICRを使用することで、園児の体温を正確に観測し、安心・安全な環境を提供します。月額サービスとして、このシステムを提供し、より多くの幼稚園や保護者が利用できるよう努めています。
+        <br>利用料：月額1500円</p>
+        </div>
+    </section>
+
+    <section id="detail">
+        <div class="container2">
+        <h2>detail</h2>
+        <p>この製品をつかっている保育園や幼稚園
+        <br>保育園：
+        <br>幼稚園：
+        </p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container2">
+        <h2>contact</h2>
+        <p>我が社の電話番号やメールアドレス
+        <br>電話番号：
+        <br>メールアドレス：</p>
+        </div>
+    </section>
+
+    <section id="login">
+    <center>
+        <div class="container">
+        <h3>login</h3>
+        <a href="login.html">ログインはこちら</a>
+        </div>
+    </center>
+    </section>
+
+<!-- JavaScript -->
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        // ページ読み込み時に、メニュー以外のセクションを非表示にする
+        hideAllSectionsExcept("problem");
+
+        // メニュー項目がクリックされたときに対応するセクションを表示する
+        var menuItems = document.querySelectorAll("#menu a");
+        menuItems.forEach(function(item) {
+            item.addEventListener("click", function(event) {
+                event.preventDefault(); // リンクのデフォルトの挙動を無効化
+                var targetSectionId = item.getAttribute("href").substring(1);
+                hideAllSectionsExcept(targetSectionId);
+            });
+        });
+
+        function hideAllSectionsExcept(sectionId) {
+            var sections = document.querySelectorAll("section");
+            sections.forEach(function(section) {
+                if (section.id === sectionId) {
+                    section.style.display = "block";
+                } else {
+                    section.style.display = "none";
+                }
+            });
+        }
+    });
+</script>
+
+</body>
+</html>

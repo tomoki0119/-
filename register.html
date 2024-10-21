@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Register Page</title>
+  <link rel="icon" href="safekids.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+  <script src="register.js"></script>
+  <!--右クリック禁止-->
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
+</head>
+<body background="8519433.jpg">
+<center>
+  <div class="kids">
+    <h2>新規ユーザー登録</h2>
+    <label for="parentName">保護者様氏名:</label>
+    <input type="text" id="parentName" placeholder="田中太郎"><br>
+    <label for="childNumber">園児出席番号:</label>
+    <input type="text" id="childNumber" placeholder="1"><br>
+    <label for="childName">園児の氏名:</label>
+    <input type="text" id="childName" placeholder="田中次郎"><br>
+    <label for="mailAddress">メールアドレス:</label>
+    <input type="text" id="mailAddress" placeholder="*******.@gmail.com"><br>
+    <label for="newPassword">新しいパスワード:</label>
+    <input type="password" id="newPassword"><br>
+    <input type="checkbox" id="showPassword" onclick="showOrHide()"> パスワードを表示<br>
+    <button onclick="register()">新規登録</button>
+    <br><br>
+    <a href="login.html">既存のユーザーはこちらでログイン</a>
+  </div>
+</center>
+</body>
+</html>

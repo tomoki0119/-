@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8; /* 背景色を追加 */
+  }
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center; /* 中央揃え */
+  }
+  th {
+    background-color:aquamarine;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  .pagination {
+    margin-top: 20px;
+  }
+  .pagination button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+  }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>園児の情報</title>
+  <link rel="icon" href="safekids.png" type="image/png">
+  <link rel="stylesheet" href="index.css">
+  <!--右クリック禁止-->
+  <script>
+    document.addEventListener('contextmenu', event => event.preventDefault());
+  </script>
+</head>
+<body>
+  <div class="table-container">
+    <h1 id="child-name-title">園児の情報</h1>
+    <table id="data-table" contenteditable="false">
+      <thead>
+        <tr>
+          <th>日付</th>
+          <th>ID</th>
+          <th>園児の名前</th>
+          <th>体温</th>
+          <th>出席情報</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+    <div class="pagination">
+      <button id="prev-page" onclick="prevPage()">前のページ</button>
+      <button id="next-page" onclick="nextPage()">次のページ</button>
+    </div>
+  </div>
+  <script src="index2.js"></script>
+</body>
+</html>
