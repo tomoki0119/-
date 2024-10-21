@@ -27,7 +27,7 @@ function login() {
       localStorage.setItem('currentChildName', response.childName);
       localStorage.setItem('currentChildNumber', response.childNumber);
       console.log('ログイン成功:', response);
-      window.location.href = 'index.html'; // ログイン後に表示するページ
+      window.location.href = 'safeKids.html'; // ログイン後に表示するページ
     } else {
       alert('ログイン失敗: ' + response.message);
       console.error('ログイン失敗:', response);
