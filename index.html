@@ -117,7 +117,7 @@
         }
 
         /* スマホ対応のメディアクエリ */
-        @media (max-width: 768px) {
+        @media only screen and(min-width: 640px) {
             header h1 {
                 font-size: 6vw;
             }
@@ -137,7 +137,7 @@
         }
         
         /* PC対応のメディアクエリ */
-        @media (min-width: 769px) {
+        @media screen and (min-width: 1024px) {
             header h1 {
                 font-size: 48px;
             }
