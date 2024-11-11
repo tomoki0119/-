@@ -17,7 +17,7 @@ function login() {
   data.append('mailAddress', mailAddress);
   data.append('password', pass);
 
-  fetch('https://script.google.com/macros/s/AKfycbzdjQ8wxxD-MDg17sLscvUqr17940XPdHxIuFNv2rtZ5EU3UC8QCGMTkIWiBY_DJFak/exec', {
+  fetch('https://script.google.com/macros/s/AKfycbw8_4QaVizVfkx7cF7ghADMC1mCqUFNSN6nc-WRWyuZYam54jRLE47-H3fKotNrSt0Lgw/exec', {
     method: 'POST',
     body: data
   })
@@ -27,7 +27,7 @@ function login() {
       localStorage.setItem('currentChildName', response.childName);
       localStorage.setItem('currentChildNumber', response.childNumber);
       console.log('ログイン成功:', response);
-      window.location.href = 'safeKids.html'; // ログイン後に表示するページ
+      window.location.href = 'index.html'; // ログイン後に表示するページ
     } else {
       alert('ログイン失敗: ' + response.message);
       console.error('ログイン失敗:', response);
