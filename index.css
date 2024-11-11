@@ -1,127 +1,39 @@
 body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
-            margin: 0;
-            background-color: #f8f8f8;
-            font-family: Arial, sans-serif;
-        }
-        .table-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 80%;
-            overflow-x: auto; /* テーブルの横スクロールを可能に */
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            min-width: 300px; /* スマホ対応の最小幅設定 */
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: aquamarine;
-        }
-        h1 {
-            margin-bottom: 20px;
-            font-size: 2em;
-        }
-        .pagination {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap; /* ボタンが折り返すように */
-        }
-        .pagination button {
-            padding: 10px 20px;
-            margin: 5px;
-            font-size: 16px;
-        }
-
-        /* スマホ対応のメディアクエリ */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 1.5em;
-            }
-            .pagination button {
-                padding: 8px 16px;
-                font-size: 14px;
-            }
-        }
-        
-        /* PC対応のメディアクエリ */
-        @media (min-width: 769px) {
-            .table-container {
-                width: 80%;
-            }
-        }body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            height: 100vh;
-            margin: 0;
-            background-color: #f8f8f8;
-            font-family: Arial, sans-serif;
-        }
-        .table-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            width: 80%;
-            overflow-x: auto; /* テーブルの横スクロールを可能に */
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-            min-width: 300px; /* スマホ対応の最小幅設定 */
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 8px;
-            text-align: center;
-        }
-        th {
-            background-color: aquamarine;
-        }
-        h1 {
-            margin-bottom: 20px;
-            font-size: 2em;
-        }
-        .pagination {
-            margin-top: 20px;
-            display: flex;
-            justify-content: center;
-            flex-wrap: wrap; /* ボタンが折り返すように */
-        }
-        .pagination button {
-            padding: 10px 20px;
-            margin: 5px;
-            font-size: 16px;
-        }
-
-        /* スマホ対応のメディアクエリ */
-        @media (max-width: 768px) {
-            h1 {
-                font-size: 1.5em;
-            }
-            .pagination button {
-                padding: 8px 16px;
-                font-size: 14px;
-            }
-        }
-        
-        /* PC対応のメディアクエリ */
-        @media (min-width: 769px) {
-            .table-container {
-                width: 80%;
-            }
-        }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+    background-color: #f8f8f8; /* 背景色を追加 */
+  }
+  .table-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center; /* 中央揃え */
+  }
+  th {
+    background-color:aquamarine;
+  }
+  h1 {
+    margin-bottom: 20px;
+  }
+  .pagination {
+    margin-top: 20px;
+  }
+  .pagination button {
+    padding: 10px 20px;
+    margin: 5px;
+    font-size: 16px;
+  }
