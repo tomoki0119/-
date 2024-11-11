@@ -5,8 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>safeKids</title>
     <link rel="icon" href="safekids.png" type="image/png">
-    <link rel="stylesheet" href="styles.css"> <!-- スタイルシートへのリンク -->
-    <!--右クリック禁止-->
+    <link rel="stylesheet" href="styles.css">
     <script>
         document.addEventListener('contextmenu', event => event.preventDefault());
     </script>
@@ -116,7 +115,26 @@
             border-radius: 0;
             border: 3px solid #333;
         }
-        
+
+        /* スマホ対応のメディアクエリ */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 6vw;
+            }
+            nav ul li a {
+                font-size: 5vw;
+            }
+            section h2, section h3 {
+                font-size: 6vw;
+            }
+            section p, .button {
+                font-size: 4.5vw;
+            }
+            .container, .container2 {
+                padding: 10px;
+                width: 95%;
+            }
+        }
     </style>
 </head>
 
