@@ -1,114 +1,87 @@
 .textbox {
-    width: 100%;
-    max-width: 350px;
-    height: 40px;
-    border-radius: 10px;
-    border: 1px solid rgb(145, 145, 145);
-    margin-bottom: 20px;
-    padding: 0 15px;  /* 入力欄に余白を追加 */
-}
+            width: 100%;
+            max-width: 350px;
+            height: 40px;
+            border-radius: 10px;
+            border: 1px solid rgb(145, 145, 145);
+            margin-bottom: 20px;
+        }
 
-.button {
-    width: 100%;
-    max-width: 200px;
-    height: 40px;
-    background-color: rgb(105, 230, 121);
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    padding: 0 20px;  /* ボタンに内側の余白を追加 */
-}
+        .button {
+            width: 100%;
+            max-width: 200px;
+            height: 40px;
+            background-color: rgb(105, 230, 121);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
 
-.button:hover {
-    background: rgb(188, 189, 255);
-}
+        .button:hover {
+            background: rgb(188, 189, 255);
+        }
 
-/* コンテナ */
-.container, .kids, .container2 {
-    width: 100%;
-    max-width: 400px;
-    height: auto;
-    padding: 20px;
-    margin: 20px auto;
-    background-color: #e0e0e0;
-    color: #333;
-    border: 3px solid #333;
-    border-radius: 10px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    text-align: center;
-}
+        /* コンテナ */
+        .container, .kids, .container2 {
+            width: 100%;
+            max-width: 600px; /* サイズを大きく */
+            height: auto;
+            padding: 30px; /* 内側の余白を広げる */
+            margin: 30px auto; /* 外側の余白も調整 */
+            background-color: #e0e0e0;
+            color: #333;
+            border: 3px solid #333;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
 
-.container {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 20%, 30% 30%, 50% 10%, 60% 60%, 10% 50%);
-}
 
-.kids {
-    clip-path: polygon(0 0, 90% 5%, 100% 100%, 0 100%, 20% 20%, 30% 10%, 50% 40%, 80% 50%, 5% 80%);
-}
+        /* 各コンテナの独自の形 */
+        .container {
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 20% 20%, 30% 30%, 50% 10%, 60% 60%, 10% 50%);
+        }
+        
+        .kids {
+            clip-path: polygon(0 0, 90% 5%, 100% 100%, 0 100%, 20% 20%, 30% 10%, 50% 40%, 80% 50%, 5% 80%);
+        }
 
-/* 基本スタイル */
-body {
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background-color: #f8f8f8;
-}
+        /* 基本スタイル */
+        body {
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f8f8;
+        }
 
-h1 {
-    text-align: center;
-    font-size: 24px;
-}
+        h1 {
+            text-align: center;
+            font-size: 24px;
+        }
 
-/* レスポンシブ調整 */
-@media (max-width: 768px) {
-    /* テキストボックスとボタンのサイズを調整 */
-    .textbox {
-        font-size: 14px;
-        height: 35px;
-        padding: 0 10px;  /* モバイル用に入力欄の余白を縮小 */
-    }
+        /* レスポンシブ調整 */
+        @media (max-width: 768px) {
+            .textbox {
+                font-size: 14px;
+                height: 35px;
+            }
 
-    .button {
-        font-size: 14px;
-        height: 35px;
-        padding: 0 15px;  /* ボタンの余白も調整 */
-    }
+            .button {
+                font-size: 14px;
+                height: 35px;
+            }
 
-    h1 {
-        font-size: 20px;  /* ヘッダーサイズを縮小 */
-    }
+            h1 {
+                font-size: 20px;
+            }
 
-    /* コンテナの幅とパディング調整 */
-    .container, .kids, .container2 {
-        max-width: 90%;  /* コンテナの最大幅を画面の90%に変更 */
-        padding: 15px;   /* モバイル向けにパディングを少し縮小 */
-    }
-}
-
-/* さらに小さなスクリーン向け調整 (例: 480px未満) */
-@media (max-width: 480px) {
-    /* よりコンパクトにするためにボタンやテキストボックスをさらに縮小 */
-    .textbox {
-        font-size: 12px;
-        height: 30px;
-    }
-
-    .button {
-        font-size: 12px;
-        height: 30px;
-    }
-
-    h1 {
-        font-size: 18px;  /* ヘッダーをさらに小さく */
-    }
-
-    /* コンテナのパディングを少し小さくして、余白を確保 */
-    .container, .kids, .container2 {
-        max-width: 85%;  /* コンテナの幅を更に縮小 */
-        padding: 10px;   /* より小さなパディング */
-    }
-}
+            /* コンテナのサイズを画面幅に合わせて調整 */
+            .container, .kids, .container2 {
+                max-width: 95%; /* スマホ向けのサイズを拡大 */
+                padding: 20px; /* 内側の余白を広げる */
+            }
+        }
