@@ -1,3 +1,15 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* 高さを画面全体に合わせる */
+    background-color: #f8f8f8;
+    line-height: 1.6;
+}
+
 .textbox {
             width: 100%;
             max-width: 350px;
